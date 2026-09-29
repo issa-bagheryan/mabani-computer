@@ -64,13 +64,16 @@
 یک مدل ساده از عملکرد کامپیوتر چنین است:
 
 ```mermaid
-graph LR
-    A[داده ها <br> Data] -->|ورودی| B((پردازش <br> Processing))
-    B -->|خروجی| C[اطلاعات <br> Information]
-    
-    style A fill:#e1f5fe,stroke:#01579b
-    style B fill:#fff9c4,stroke:#fbc02d
-    style C fill:#e8f5e9,stroke:#2e7d32
+flowchart LR
+
+    A["داده‌ها<br/><small>Data</small>"] -->|ورودی| B(("پردازش<br/><small>Processing</small>"))
+    B -->|خروجی| C["اطلاعات<br/><small>Information</small>"]
+
+    style A fill:#e1f5fe,stroke:#01579b,stroke-width:2px,color:#01579b
+    style B fill:#fff9c4,stroke:#fbc02d,stroke-width:3px,color:#795548
+    style C fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#1b5e20
+
+    linkStyle default stroke:#546e7a,stroke-width:2px
 ```
 
 این مدل یکی از مهم‌ترین مدل‌های پایه در علوم کامپیوتر است:
